@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main() {
+    // temperatura, umidade e nível de estoque
+    float temperatura;
+    float umidade;
+    unsigned int estoque, estoqueminimo = 3000;
+
+    //entrar com dados
+    printf("Digite a temperatura do ambiente: \n");
+    scanf("%f", &temperatura);
+    printf("Digite a umidade do ambiente: \n");
+    scanf("%f", &umidade);
+    printf("Digite o total de itens em estoque: \n");
+    scanf("%u", &estoque);
+
+    //condicionais
+    if (temperatura > 30)
+        printf("Está muito quente!\n");
+    else
+        printf("Temperatura adequada! \n");
+
+    if (umidade > 50)
+        printf("Umidade crítica \n");
+    else
+        printf("Umidade dentro dos parâmetros\n");
+    
+    if (estoque < estoqueminimo)
+        printf("Estoque abaixo do indicado \n");
+    else
+        printf("Estoque ok");
+
+}
